@@ -2,13 +2,19 @@
 
 🏠 [Ana Sayfaya Dön](../README.md)
 
+![Propulsion Cross-section](schematic.png)
+
 ### Özet (Abstract)
 Bir mühimmat veya füzenin menzili, hızı ve manevra kabiliyeti; yazılımın zekasıyla değil, fiziğin ve termodinamiğin katı sınırlarıyla belirlenir. SAGE'de itki ve malzeme mühendisliği, kimyasal enerjinin kinetik enerjiye en verimli şekilde dönüştürülmesi ve bu süreçte oluşan ekstrem sıcaklık ve basınç yüklerinin yönetilmesidir. Bu bölüm, katı yakıt teknolojilerinden hipersonik ısı kalkanlarına kadar sistemlerin "fiziksel iskeletini" inceler.
 
 ---
 
 ## 🔥 İtki Sistemleri: Enerjinin Kontrolü
-SAGE mühimmatları, görev profiline göre farklı itki mimarilerine sahiptir. Her biri farklı bir termodinamik optimizasyon gerektirir.
+SAGE mühimmatları, görev profiline göre farklı itki mimarilerine sahiptir. Bir roket motorunun ürettiği toplam itki (Thrust) denklemi:
+
+$$ F = \dot{m} V_e + (p_e - p_a) A_e $$
+
+Burada $\dot{m}$ kütlesel debi, $V_e$ çıkış hızı, $p_e$ çıkış basıncı ve $p_a$ ortam basıncıdır. Maksimum verimlilik için çıkış basıncı ile ortam basıncının eşitlenmesi (optimum genleşme) hedeflenir.
 
 | İtki Tipi | Teknik Özellikler | Kullanım Amacı |
 | :--- | :--- | :--- |
@@ -17,11 +23,11 @@ SAGE mühimmatları, görev profiline göre farklı itki mimarilerine sahiptir. 
 | **Dual-Pulse Motor** | İki ayrı yanma odası, terminal safhada ek hızlanma. | Gökdoğan (BVR - Görüş Ötesi Menzil) |
 
 ## 🌡️ Aerodinamik Isınma ve Termal Yönetim
-Hız arttıkça (özellikle Mach 3+ seviyelerinde), mühimmatın yüzeyindeki hava sürtünmesi sıcaklığı binlerce dereceye çıkarır. Bu durum "Stagnation Temperature" (Durgunluk Sıcaklığı) olarak adlandırılır.
+Hız arttıkça (özellikle Mach 3+ seviyelerinde), mühimmatın yüzeyindeki hava sürtünmesi sıcaklığı binlerce dereceye çıkarır. Durgunluk Sıcaklığı ($T_0$) şu formülle hesaplanır:
 
-* **Termal Bariyerler:** Yüksek ısılarda yapısal bütünlüğünü koruyan nikel bazlı süper alaşımlar ve karbon-karbon kompozitler.
-* **Ablatif Soğutma:** Yüzeyin kontrollü bir şekilde aşınarak iç katmanları ısıdan koruması (ısı kalkanı teknolojisi).
-* **Şok Dalgaları:** Burun konisinin açısı, şok dalgasının mühimmat gövdesine temas edip etmeyeceğini (ve dolayısıyla termal yükü) belirler.
+$$ T_0 = T \left( 1 + \frac{\gamma - 1}{2} M^2 \right) $$
+
+Mach 5 hızında ($M=5$), ortam sıcaklığının 6 katına varan bir termal yük oluşur. Bu yükü yönetmek mühimmatın yapısal bütünlüğü için kritiktir.
 
 ## 🧱 Malzeme Bilimi ve Yapısal Analiz
 Bir mühimmatın ağırlığını %5 azaltmak, menzilini %15 artırabilir.

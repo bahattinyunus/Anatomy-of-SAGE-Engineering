@@ -2,6 +2,12 @@
 
 ![Anatomy of SAGE Engineering Banner](assets/banner.png)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/SAGE-VISION_LEVEL_7-blue.svg?style=for-the-badge" alt="Vision Level">
+  <img src="https://img.shields.io/badge/Engineering-Premium-red.svg?style=for-the-badge" alt="Engineering">
+</p>
+
 Bu depo (repository), TÜBİTAK Savunma Sanayii Araştırma ve Geliştirme Enstitüsü'nün (SAGE) geliştirdiği ileri teknoloji sistemleri incelemenin ötesine geçerek; SAGE'yi küresel çapta "Dünyanın En İyi Ar-Ge Merkezi" yapacak mühendislik felsefesini, yetkinlik setlerini ve multidisipliner vizyonu tanımlamak amacıyla oluşturulmuş bir sistem analizi ve yol haritası (roadmap) projesidir.
 
 Amacımız, ortaya çıkan ürünleri listelemek değil; bu ürünlerin arkasındaki algoritmik temelleri irdelemek ve bu sistemleri yarından alıp geleceğe taşıyacak mühendis adaylarına **"Sistemik Düşünce" (Systems Thinking)** perspektifi kazandırmaktır.
@@ -69,6 +75,15 @@ Sadece kütüphane çağıran değil, fiziği ve matematiği koda dökebilen mü
 ### III. Yapay Zeka ve Endüstriyel Optimizasyon
 Geleceğin sistemleri deterministik kurallarla değil, olasılıksal ve adaptif zekayla çalışacak. SAGE'nin geleceği, donanım kısıtları (Edge AI) altında çalışan yüksek performanslı yapay zeka modellerindedir.
 * **Odaklanılacak Alan:** Takviyeli Öğrenme (Reinforcement Learning), Sensör Füzyonu, Bilgisayarlı Görü ve Gömülü Sistemlerde Yapay Zeka.
+
+### 🛠️ Teknoloji Ekosistemi (Core Tech Stack)
+
+<p align="left">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/MATLAB-ED1C24?style=for-the-badge&logo=mathworks&logoColor=white" />
+</p>
 
 ### IV. "Neden?" Sorusuna Takıntılı Olmak
 Var olan mimarileri kabullenmek yerine, "Bu motoru %2 daha hafif yaparsak otonomi yazılımına ne kadar alan açarız?" veya "Bu algoritmada matris çarpım süresini mikrosaniye bazında nasıl düşürürüz?" gibi sorular sormalısınız. Başarı, marjinal kazanımların optimizasyonunda gizlidir.

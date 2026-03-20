@@ -2,6 +2,8 @@
 
 🏠 [Ana Sayfaya Dön](../README.md)
 
+![AI Seeker Neural Map](schematic.png)
+
 ### Özet (Abstract)
 Modern mühimmat sistemleri artık sadece "güdülen" değil, "karar veren" platformlardır. SAGE'nin otonomi vizyonu; karmaşık, gürültülü ve hasmane (denied-area) ortamlarda platformun görevini başarıyla tamamlamasını sağlayan algoritmik bir zırh inşa etmektir. Bu bölüm, Kalman filtrelerinden derin öğrenme tabanlı hedef tanıma sistemlerine kadar sensör füzyonunun ve yapay zekanın "Edge" (uç) cihazlardaki mimarisini inceler.
 
@@ -21,8 +23,12 @@ graph TD
 ```
 Bir mühimmatın konumu asla tek bir sensöre emanet edilmez. INS (Ataletsel Navigasyon), GPS (Küresel Konumlama) ve Seekers (Arayıcı Başlıklar) verileri birleştirilerek "En İyi Tahmin" (Best Estimate) oluşturulur.
 
-* **Genişletilmiş Kalman Filtresi (EKF):** Dinamik sistem olmayan doğrusal (non-linear) yapıları doğrusal hale getirerek konum tahminlemeyi sağlar.
-* **Gürültü Yönetimi (Noise Management):** Sensörlerden gelen beyaz gürültünün (Gaussian noise) sistemden arındırılması ve bias hatalarının anlık olarak kompanse edilmesi.
+* **Genişletilmiş Kalman Filtresi (EKF):** Dinamik sistem olmayan doğrusal (non-linear) yapıları doğrusal hale getirerek konum tahminlemeyi sağlar. Tahmin (Prediction) adımı şu denklemle ifade edilir:
+
+$$ \hat{x}_{k|k-1} = f(\hat{x}_{k-1|k-1}, u_{k-1}) $$
+$$ P_{k|k-1} = F_{k-1} P_{k-1|k-1} F_{k-1}^T + Q_{k-1} $$
+
+Burada $P$ hata kovaryans matrisidir ve sistemin belirsizliğini temsil eder. Güncelleme (Update) adımında ise sensörden gelen gerçek veri ile tahmin arasındaki fark (innovation) kullanılarak sistem düzeltilir.
 * **GNSS-Denied Area:** GPS sinyalinin köreltildiği (jamming) ortamlarda, sadece INS ve görsel navigasyon verisiyle (Optical Flow) milimetrik hassasiyette seyrüsefer yapma yeteneği.
 
 ## 🤖 Uç Noktada Yapay Zeka (Edge AI) ve Gömülü Sistemler

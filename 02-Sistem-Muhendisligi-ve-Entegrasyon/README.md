@@ -2,6 +2,8 @@
 
 🏠 [Ana Sayfaya Dön](../README.md)
 
+![System Architecture Schematic](schematic.png)
+
 ### Özet (Abstract)
 Sistem Mühendisliği, bir füze veya mühimmatın sadece parçalarının toplamı değil, bu parçalar arasındaki etkileşimlerin yönetilmesidir. SAGE'de bir sistem mühendisi, yazılımın hızı ile donanımın ısısı, aerodinamiğin sürüklemesi (drag) ile motorun itkisi arasındaki o hassas dengeyi kuran bir "Sistem Orkestra Şefi"dir. Bu bölüm, karmaşık savunma sistemlerinin V-Modeli (Vee Model) çerçevesinde nasıl tasarlanıp entegre edildiğini teknik detaylarıyla ele alır.
 
@@ -40,13 +42,12 @@ Hiçbir sistem mükemmel değildir; sadece "Yeterince İyi Optimize Edilmiş" si
 | **Zırh Delme** | **Ağırlık** | Daha ağır harp başlığı = Daha hantal mühimmat. | Patlama geometrisini ve jet oluşumunu optimize eden reaktif yapılar. |
 
 ## 🧩 Multidisipliner Optimizasyon (MDO)
-SAGE'de bir mühendis sadece kendi alanını düşünemez.
-* **Yazılım:** Algoritmanın karmaşıklığı, işlemci yükünü artırır.
-* **Elektronik:** İşlemci yükü arttıkça PCB ısınır.
-* **Mekanik:** Isınan PCB, çevresindeki yapısal elemanların termal genleşmesine neden olur.
-* **Kontrol:** Genleşen gövde, aerodinamik katsayıları değiştirir.
+SAGE'de bir mühendis sadece kendi alanını düşünemez. Bir sistemin dinamik davranışı genellikle lineerleştirilmiş **Durum-Uzay (State-Space)** modelleriyle ifade edilir:
 
-Sistem mühendisi, bu zincirleme reaksiyonu önceden modelleyen (MBSE - Model Based Systems Engineering) kişidir.
+$$ \dot{x}(t) = Ax(t) + Bu(t) $$
+$$ y(t) = Cx(t) + Du(t) $$
+
+Burada $x$ sistemin iç durumlarını (hız, açı, basınç), $u$ ise kontrol girdilerini (kanatçık sapması, itki miktarı) temsil eder. Mühendisin görevi, matrisleri optimize ederek sistemin her koşulda kararlı kalmasını sağlamaktır.
 
 ---
 
