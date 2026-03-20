@@ -1,5 +1,7 @@
 # 05. Test Altyapıları ve Dijital İkiz (Digital Twin)
 
+🏠 [Ana Sayfaya Dön](../README.md)
+
 ### Özet (Abstract)
 Savunma sanayiinde "hata" bir seçenek değildir. SAGE'de bir sistemin laboratuvardan çıkıp sahaya gitmeden önce binlerce kez dijital ve fiziksel testlerden geçmesi gerekir. Bu bölüm; Donanım Döngüde (HIL) simülasyonlarından, sistemlerin tüm yaşam döngüsünü kapsayan Dijital İkiz (Digital Twin) mimarisine kadar doğrulama ve geçerli kılma (V&V) süreçlerini teknik bir perspektifle inceler.
 

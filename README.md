@@ -10,12 +10,12 @@ Amacımız, ortaya çıkan ürünleri listelemek değil; bu ürünlerin arkasın
 
 ## 📑 İçindekiler Mimarisi
 
-1. [SAGE'nin Evrimi: Dünü, Bugünü ve Yarını](#1-sagenin-evrimi-dünü-bugünü-ve-yarını)
-2. [Sistem Mühendisliği ve Multidisipliner Entegrasyon](#2-sistem-mühendisliği-ve-multidisipliner-entegrasyon)
-3. [Yapay Zeka, Otonomi ve Sensör Füzyonu](#3-yapay-zeka-otonomi-ve-sensör-füzyonu)
-4. [Malzeme Bilimi, İtki ve Termodinamik Kısıtlar](#4-malzeme-bilimi-i̇tki-ve-termodinamik-kısıtlar)
-5. [Test Altyapıları ve Dijital İkiz (Digital Twin)](#5-test-altyapıları-ve-dijital-i̇kiz)
-6. [Geleceğin SAGE Mühendisi: Dünyanın En İyisini İnşa Etmek](#6-geleceğin-sage-mühendisi-dünyanın-en-i̇yisini-i̇nşa-etmek)
+1. [SAGE'nin Evrimi: Dünü, Bugünü ve Yarını](./01-SAGE-Evrimi/README.md)
+2. [Sistem Mühendisliği ve Multidisipliner Entegrasyon](./02-Sistem-Muhendisligi-ve-Entegrasyon/README.md)
+3. [Yapay Zeka, Otonomi ve Sensör Füzyonu](./03-Yapay-Zeka-Otonomi-Sensor-Fuzyonu/README.md)
+4. [Malzeme Bilimi, İtki ve Termodinamik Kısıtlar](./04-Malzeme-Itki-Termodinamik/README.md)
+5. [Test Altyapıları ve Dijital İkiz (Digital Twin)](./05-Test-Altyapilari-Dijital-Ikiz/README.md)
+6. [Geleceğin SAGE Mühendisi: Dünyanın En İyisini İnşa Etmek](./06-Gelecegin-SAGE-Muhendisi/README.md)
 
 ---
 
@@ -35,8 +35,21 @@ Dinamik ortamlarda çalışan platformların kendi başlarına karar almasını 
 ## 4. Malzeme Bilimi, İtki ve Termodinamik Kısıtlar
 Aerodinamik ısınmaya dayanan kompozitler, katı/sıvı yakıtlı motor tasarımları ve yüksek G kuvvetlerine dayanan yapısal iskelet analizleri.
 
-## 5. Test Altyapıları ve Dijital İkiz (Digital Twin)
-Donanım döngüde (HIL) simülasyonları, aerodinamik rüzgar tüneli testleri ve sistemlerin dijital ortamda sıfır hata toleransıyla doğrulanması.
+## 🔄 SAGE Sistemik Düşünce Mimarisi
+
+```mermaid
+graph TD
+    A[Görev İhtiyacı] --> B[Sistem Mühendisliği & V-Model]
+    B --> C[Aerodinamik & İtki]
+    B --> D[Güdüm & Kontrol]
+    B --> E[Yapay Zeka & Otonomi]
+    C --> F{Multidisipliner Optimizasyon}
+    D --> F
+    E --> F
+    F --> G[HIL Simülasyonu & Test]
+    G --> H[Dijital İkiz & Validasyon]
+    H --> I[Operasyonel Hazırlık]
+```
 
 ---
 
@@ -66,5 +79,5 @@ Var olan mimarileri kabullenmek yerine, "Bu motoru %2 daha hafif yaparsak otonom
 Bu repo, statik bir doküman değil, vizyoner mühendisler için yaşayan bir ekosistemdir. Sistem tasarımları, endüstriyel optimizasyon ve otonomi konularında SAGE vizyonunu ileriye taşıyacak herkesin katkılarına (Pull Request) açıktır.
 
 **Araştırmacı & Küratör:**
-[Senin Adın/Kullanıcı Adın]
+[Bahattin Yunus](https://github.com/bahattinyunus)
 *Multi-Disciplinary Systems Designer | Solopreneur | AI & Industrial Optimization*

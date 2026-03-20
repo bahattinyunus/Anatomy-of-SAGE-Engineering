@@ -1,11 +1,28 @@
 # 02. Sistem Mühendisliği ve Multidisipliner Entegrasyon
 
+🏠 [Ana Sayfaya Dön](../README.md)
+
 ### Özet (Abstract)
 Sistem Mühendisliği, bir füze veya mühimmatın sadece parçalarının toplamı değil, bu parçalar arasındaki etkileşimlerin yönetilmesidir. SAGE'de bir sistem mühendisi, yazılımın hızı ile donanımın ısısı, aerodinamiğin sürüklemesi (drag) ile motorun itkisi arasındaki o hassas dengeyi kuran bir "Sistem Orkestra Şefi"dir. Bu bölüm, karmaşık savunma sistemlerinin V-Modeli (Vee Model) çerçevesinde nasıl tasarlanıp entegre edildiğini teknik detaylarıyla ele alır.
 
 ---
 
 ## 📐 V-Modeli ve Gereksinimlerin Hiyerarşisi
+
+```mermaid
+graph LR
+    A[Görev Tanımı] --> B[Sistem Gereksinimleri]
+    B --> C[Alt Sistem Tasarımı]
+    C --> D[Bileşen Uygulama]
+    D --> E[Bileşen Testi]
+    E --> F[Entegrasyon Testi]
+    F --> G[Sistem Validasyonu]
+    G --> H[Görev Başarısı]
+    D -.-> E
+    C -.-> F
+    B -.-> G
+    A -.-> H
+```
 SAGE'de tasarım süreci, üst düzey görev gereksinimlerinden (High-Level Requirements) en alt seviyedeki vida tork değerine kadar inen bir "İzlenebilirlik" (Traceability) zinciridir.
 
 1. **Gereksinim Analizi:** "Mühimmat 40,000 feet irtifada Mach 0.9 hızla giderken hedefi vurmalı."

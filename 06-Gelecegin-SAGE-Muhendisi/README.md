@@ -1,5 +1,7 @@
 # 06. Geleceğin SAGE Mühendisi: Dünyanın En İyisini İnşa Etmek
 
+🏠 [Ana Sayfaya Dön](../README.md)
+
 ### Özet (Abstract)
 SAGE'yi küresel bir teknoloji devriminin merkezine oturtacak mühendis; sadece kod yazan, sadece CAD çizen veya sadece devre tasarlayan bir teknisyen olamaz. O, "Büyük Resmi" gören ve farklı disiplinlerin birbiri üzerindeki etkisini milisaniye ve milimetre bazında hesaplayabilen bir **Multidisipliner Sistem Mimarı** olmalıdır. Bu bölüm, geleceğin savunma teknolojilerini inşa edecek mühendis adayları için teknik bir gelişim yol haritası (roadmap) sunar.
 

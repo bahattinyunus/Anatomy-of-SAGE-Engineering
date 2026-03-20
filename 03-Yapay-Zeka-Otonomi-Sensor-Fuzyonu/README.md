@@ -1,11 +1,24 @@
 # 03. Yapay Zeka, Otonomi ve Sensör Füzyonu
 
+🏠 [Ana Sayfaya Dön](../README.md)
+
 ### Özet (Abstract)
 Modern mühimmat sistemleri artık sadece "güdülen" değil, "karar veren" platformlardır. SAGE'nin otonomi vizyonu; karmaşık, gürültülü ve hasmane (denied-area) ortamlarda platformun görevini başarıyla tamamlamasını sağlayan algoritmik bir zırh inşa etmektir. Bu bölüm, Kalman filtrelerinden derin öğrenme tabanlı hedef tanıma sistemlerine kadar sensör füzyonunun ve yapay zekanın "Edge" (uç) cihazlardaki mimarisini inceler.
 
 ---
 
 ## 🛰️ Sensör Füzyonu ve Kalman Filtreleme
+
+```mermaid
+graph TD
+    A[Görsel / Seeker] --> B[Gözlem Verisi]
+    C[IMU / INS] --> D[Durum Tahmini]
+    E[GPS / GNSS] --> B
+    B --> F[Kalman Filtresi / EKF]
+    D --> F
+    F --> G[Optimize Konum & Hava Kapasitesi]
+    G --> H[Güdüm Döngüsü]
+```
 Bir mühimmatın konumu asla tek bir sensöre emanet edilmez. INS (Ataletsel Navigasyon), GPS (Küresel Konumlama) ve Seekers (Arayıcı Başlıklar) verileri birleştirilerek "En İyi Tahmin" (Best Estimate) oluşturulur.
 
 * **Genişletilmiş Kalman Filtresi (EKF):** Dinamik sistem olmayan doğrusal (non-linear) yapıları doğrusal hale getirerek konum tahminlemeyi sağlar.

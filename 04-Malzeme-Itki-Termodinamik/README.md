@@ -1,5 +1,7 @@
 # 04. Malzeme Bilimi, İtki ve Termodinamik Kısıtlar
 
+🏠 [Ana Sayfaya Dön](../README.md)
+
 ### Özet (Abstract)
 Bir mühimmat veya füzenin menzili, hızı ve manevra kabiliyeti; yazılımın zekasıyla değil, fiziğin ve termodinamiğin katı sınırlarıyla belirlenir. SAGE'de itki ve malzeme mühendisliği, kimyasal enerjinin kinetik enerjiye en verimli şekilde dönüştürülmesi ve bu süreçte oluşan ekstrem sıcaklık ve basınç yüklerinin yönetilmesidir. Bu bölüm, katı yakıt teknolojilerinden hipersonik ısı kalkanlarına kadar sistemlerin "fiziksel iskeletini" inceler.
 

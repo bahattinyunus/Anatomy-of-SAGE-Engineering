@@ -1,0 +1,17 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and Temp
+*.log
+/tmp/
+
+# AI Artifacts (if stored in repo)
+.gemini/
+brain/
